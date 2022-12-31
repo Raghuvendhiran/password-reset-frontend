@@ -10,17 +10,8 @@ function ResetPassword() {
 	const [Password, setPassword] = useState("");
 	const [msg, setMsg] = useState("");
 	const [error, setError] = useState("");
-	const params = useParams();
-	// const [data, setData] = useState(null);
+	const params = useParams();	
 	const { userString, userId } = params;
-
-
-	// useEffect(() => {
-	// 	fetch(`${process.env.BaseURl}/PasswordReset/${userString}/${userId}`)
-	// 		.then(response => response.json())
-	// 		.then(data => setData(data));
-	// }, []);
-
 
 
 	const handleSubmit = async (e) => {
